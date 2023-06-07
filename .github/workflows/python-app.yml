@@ -1,7 +1,4 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
-name: Python application
+name: Sydorenko Photos
 
 on:
   push:
@@ -9,7 +6,7 @@ on:
   pull_request:
     branches: [ "master" ]
   schedule:
-    - cron: '0 0 * * *' # At 00:00 on Monday
+    - cron: '0 1/5 * * *'
 
 permissions:
   contents: read
@@ -20,8 +17,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content
 
       - name: setup python
         uses: actions/setup-python@v4
