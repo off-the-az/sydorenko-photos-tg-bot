@@ -1,8 +1,8 @@
-name: run main.py
+name: Sydorenko Photos Bot Server
 
 on:
   schedule:
-    - cron: '0 0 * * *' # At 00:00 on Monday
+    - cron: '0 1/5 * * *' # At 00:00 on Monday
 
 jobs:
   build:
