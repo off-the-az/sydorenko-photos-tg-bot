@@ -1,9 +1,8 @@
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
-from aiogram.utils import executor
 
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
-
+from aiogram.utils import executor
 
 bot = Bot('5534061322:AAFHVzdUeOHb7FLrVd3MC2yhUSJ8OW5MTc0')
 dp = Dispatcher(bot)
@@ -58,7 +57,7 @@ back_manu_btn = KeyboardButton('↩️Назад до меню')
 
 full_price_btn = ReplyKeyboardMarkup().add(wedding_btn,
                                                      family_btn, personal_btn,
-                                                      love_btn, church_btn, vinchannia_btn, 
+                                                      love_btn, church_btn, vinchannia_btn,
                                                       birthday_btn,book_btn, back_btn)
 main_menu_btn = ReplyKeyboardMarkup().add(price_btn, portfolios_btn)
 want_photo_btn = ReplyKeyboardMarkup(resize_keyboard=True).add(want_btn, back_manu_btn)
@@ -80,7 +79,7 @@ async def bot_message(message : types.Message):
         await bot.send_message(message.from_user.id, 'Хочеш дивитись прайс чи, переглянути портфоліо?😋', reply_markup=main_menu_btn)
 
     elif message.text == 'Хочу!😍':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''Подзвони мені і замов😋
                     ⬇️
             0935289756
@@ -136,7 +135,7 @@ async def bot_message(message : types.Message):
         Термін віддачі: 2-3 місяці(в залежності від зайнятості)''', reply_markup=want_photo_btn)
 
     elif message.text == '🔥\nПерсональна':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''.
                      Ціна зйомки на 2023
                                      ⬇️
@@ -152,7 +151,7 @@ async def bot_message(message : types.Message):
         ✓ ❗️Термін віддачі фотографій залежить від зайнятості  і може інколи відрізнятись від заданого терміну(уточнюйте)❗️ ''', reply_markup=want_photo_btn)
 
     elif message.text == '👨‍👩‍👦\nСімейна':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''.
                      Ціна зйомки на 2023
                                      ⬇️
@@ -168,7 +167,7 @@ async def bot_message(message : types.Message):
         ✓ ❗️Термін віддачі фотографій залежить від зайнятості  і може інколи відрізнятись від заданого терміну(уточнюйте)❗️ ''', reply_markup=want_photo_btn)
 
     elif message.text == '❤️\nЛавСторі':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''.
                      Ціна зйомки на 2023
                                      ⬇️
@@ -184,7 +183,7 @@ async def bot_message(message : types.Message):
         ✓ ❗️Термін віддачі фотографій залежить від зайнятості  і може інколи відрізнятись від заданого терміну(уточнюйте)❗️ ''', reply_markup=want_photo_btn)
 
     elif message.text == '👼🏼\nХрещення':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''.
                      Ціна зйомки на 2023
                                      ⬇️
@@ -199,7 +198,7 @@ async def bot_message(message : types.Message):
         ✓ ❗️Термін віддачі фотографій залежить від зайнятості  і може інколи відрізнятись від заданого терміну(уточнюйте)❗️ ''', reply_markup=want_photo_btn)
 
     elif message.text == '💒\nВінчання':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''.
                      Ціна зйомки на 2023
                                      ⬇️
@@ -214,7 +213,7 @@ async def bot_message(message : types.Message):
         ✓ ❗️Термін віддачі фотографій залежить від зайнятості  і може інколи відрізнятись від заданого терміну(уточнюйте)❗️ ''', reply_markup=want_photo_btn)
 
     elif message.text == '🎂День Народження':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''.
                      Ціна зйомки на 2023
                                      ⬇️
@@ -230,7 +229,7 @@ async def bot_message(message : types.Message):
         ✓ ❗️Термін віддачі фотографій залежить від зайнятості  і може інколи відрізнятись від заданого терміну(уточнюйте)❗️ ''', reply_markup=want_photo_btn)
 
     elif message.text == '[15 x 15]':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''10 розворотів - 1️⃣2️⃣0️⃣0️⃣ грн
 
 12 розворотів - 1️⃣4️⃣0️⃣0️⃣ грн 
@@ -263,7 +262,7 @@ async def bot_message(message : types.Message):
 🔗Фольга''')
 
     elif message.text == '[20 x 20]':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''10 розворотів - 1️⃣9️⃣0️⃣0️⃣ грн
 
 12 розворотів - 2️⃣0️⃣0️⃣0️⃣ грн
@@ -296,7 +295,7 @@ async def bot_message(message : types.Message):
 🔗Фольга''')
 
     elif message.text == '[20 x 30]':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''10 розворотів - 2️⃣1️⃣0️⃣0️⃣ грн
 
 12 розворотів - 2️⃣2️⃣0️⃣0️⃣ грн
@@ -329,7 +328,7 @@ async def bot_message(message : types.Message):
 🔗Фольга''')
 
     elif message.text == '[25 x 25]':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''10 розворотів - 2️⃣1️⃣0️⃣0️⃣ грн
 
 12 розворотів - 2️⃣2️⃣0️⃣0️⃣ грн
@@ -362,7 +361,7 @@ async def bot_message(message : types.Message):
 🔗Фольга''')
 
     elif message.text == '[30 x 30]':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''10 розворотів - 2️⃣4️⃣0️⃣0️⃣ грн
 
 12 розворотів - 2️⃣6️⃣0️⃣0️⃣ грн 
@@ -395,7 +394,7 @@ async def bot_message(message : types.Message):
 🔗Фольга''')
 
     elif message.text == '[30 x 45]':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''10 розворотів - 2️⃣9️⃣0️⃣0️⃣  грн
 
 12 розворотів - 3️⃣2️⃣0️⃣0️⃣ грн 
@@ -428,7 +427,7 @@ async def bot_message(message : types.Message):
 🔗Фольга''')
 
     elif message.text == '📱\nЦифровий альбом':
-        await bot.send_message(message.from_user.id, 
+        await bot.send_message(message.from_user.id,
             '''[15х15] 1️⃣0️⃣0️⃣0️⃣ грн
 
 [15х21] 1️⃣1️⃣0️⃣0️⃣ грн
@@ -455,5 +454,6 @@ async def bot_message(message : types.Message):
     else:
         await bot.send_message(message.from_user.id, 'Не займайся творчістю, натисни на кнопку😁')
 
-executor.start_polling(dp, skip_updates=True)
+if __name__ == '__main__':
+    executor.start_polling(dp)
 
