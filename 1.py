@@ -4,7 +4,7 @@ from aiogram.dispatcher import Dispatcher
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils import executor
 
-bot = Bot('5534061322:AAFHVzdUeOHb7FLrVd3MC2yhUSJ8OW5MTc0')
+bot = Bot('5638089954:AAG20Qfx9dWosglOg1H36npzTWTFQMxE0ls')
 dp = Dispatcher(bot)
 
 
