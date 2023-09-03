@@ -3,6 +3,8 @@ name: Sydorenko Photos Bot Server
 on:
   schedule:
     - cron: '0 1/5 * * *'
+  push:
+    branches: [ master ]
 
 jobs:
   build:
